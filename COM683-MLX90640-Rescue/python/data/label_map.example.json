@@ -1,0 +1,11 @@
+{
+  "human": "person",
+  "pedestrian": "person",
+  "person": "person",
+  "cat": "pet",
+  "dog": "pet",
+  "animal": "pet",
+  "background": "empty",
+  "none": "empty",
+  "hotspot": "heater"
+}
