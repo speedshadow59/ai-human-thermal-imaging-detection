@@ -1,6 +1,6 @@
-# COM683 Coursework 2 - AI-Assisted Thermal Imaging (MLX90640 + Edge Impulse)
+# AI Human Thermal Imaging Detection (MLX90640 + Edge Impulse)
 
-This is a standalone project pack for an embedded + machine learning coursework portfolio using the MLX90640 thermal sensor, with training and testing completed in Edge Impulse.
+This repository contains an embedded and machine-learning workflow for thermal person detection using the MLX90640 sensor, with model training and testing in Edge Impulse.
 
 ## 1) Project Goal
 Build an edge-intelligent thermal detection system that can support fire-rescue style search in low-visibility conditions by detecting heat signatures from MLX90640 frames.
@@ -26,7 +26,7 @@ Build an edge-intelligent thermal detection system that can support fire-rescue 
 
 ### B. Python environment
 ```powershell
-cd C:\Users\user\COM683-MLX90640-Rescue\python
+cd C:\Users\user\Downloads\PielikysLaurynasB00842548_Code (1)\COM683-MLX90640-Rescue\python
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
@@ -89,7 +89,7 @@ python src\viz\live_viewer.py --port COM4
 ## 5) External Datasets
 No third-party public thermal datasets were ultimately incorporated into the final submitted dataset. All training and testing samples were captured directly using the MLX90640 sensor during dedicated recording sessions. The `prepare_mixed_edge_impulse_dataset.py` script was developed to support potential dataset merging but was not used in the final pipeline. The Edge Impulse project linked in Section 8 reflects training on own-captured data only.
 
-## 7) Recommended Classes
+## 6) Recommended Classes
 - `person`
 - `pet`
 - `empty`
@@ -98,18 +98,18 @@ No third-party public thermal datasets were ultimately incorporated into the fin
 
 Adjust to match your exact use case and available scenes.
 
-## 8) Safety and Ethics
+## 7) Safety and Ethics
 - Do not claim system replaces firefighters.
 - Present as decision support tool.
 - Include false positive/negative risks and mitigation strategy.
 
-## 9) Submission Components
+## 8) Submission Components
 - Code zip (this project + comments, including Edge Impulse deployment integration code)
 - Dataset zip (`data/photos`, logs, and the processed train/test metadata you are submitting)
 - Slides (your final PPT/PDF plus `docs/slide_assets/` if needed for rebuild evidence)
 - 1-minute demo video (split-screen)
 
-## 10) Edge Impulse Public Project Link
+## 9) Edge Impulse Public Project Link
 
 Your coursework solution (training, model, and deployment) is implemented in Edge Impulse Studio and can be viewed here:
 
